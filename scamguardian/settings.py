@@ -135,6 +135,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:8081",
     "http://localhost:8080",
     "http://127.0.0.1:8080",
+    "https://scam-frontend.onrender.com",
+    "https://scam-project.onrender.com",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
@@ -184,3 +186,8 @@ SIMPLE_JWT = {
     'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
     'TOKEN_TYPE_CLAIM': 'token_type',
 }
+
+SESSION_COOKIE_SAMESITE = "None"
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = "None"
+CSRF_COOKIE_SECURE = True
